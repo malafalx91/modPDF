@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+	<description>Empty web.xml file for Web Application</description>
+
+	<servlet-mapping>
+		<servlet-name>GeneratePDFReport</servlet-name>
+		<url-pattern>/generatepdfreport</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GeneratePDFReport</servlet-name>
+		<servlet-class>pdfreport.GeneratePDFReport</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GeneratePDFMultiReport</servlet-name>
+		<url-pattern>/generatePDFMultiReport</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GeneratePDFMultiReport</servlet-name>
+		<servlet-class>pdfreport.GeneratePDFMultiReport</servlet-class>
+	</servlet>
+
+
+
+
+	<session-config>
+		<session-timeout>35</session-timeout>
+	</session-config>
+	<mime-mapping>
+		<extension>html</extension>
+		<mime-type>text/html</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>txt</extension>
+		<mime-type>text/plain</mime-type>
+	</mime-mapping>
+	<welcome-file-list>
+		<welcome-file>/PDFReportPage.jsp</welcome-file>
+	</welcome-file-list>
+	<jsp-config />
+
+	<!-- licenza winward report -->
+	<context-param>
+		<param-name>path_propfile</param-name>
+		<!-- <param-value> /home/luca/Lavoro/workspace/PDFReportServer8/Trunk/PDFReportServer8/PPDFReportServer/lib/WindwardReports912.properties</param-value> -->
+		<param-value>D:\eco_pdfreport\WindwardReports.15.trial.properties</param-value>
+	</context-param>
+	<!-- directory dove sono contenute le cartelle con i template -->
+	<context-param>
+		<param-name>rootTemplateDir</param-name>
+		<!-- <param-value>/home/luca/Lavoro/workspace/PDFReportServer8/Trunk/PDFReportServer8/template</param-value> -->
+		<param-value>D:\eco_pdfreport\template</param-value>
+		<!-- <param-value>\\pdfgentest.gruppoitas.local\template</param-value> -->
+	</context-param>
+	<!-- cartella dove viene eseguito lo spool dei log -->
+	<context-param>
+		<param-name>spooldir</param-name>
+		<!-- <param-value>/home/luca/Lavoro/workspace/PDFReportServer8/Trunk/PDFReportServer8/spool</param-value> -->
+		<param-value>D:\eco_pdfreport\spool</param-value>
+	</context-param>
+	<!-- se "Y" si attivano le messaggistiche di log visibili nei log dell' 
+		Application server -->
+	<context-param>
+		<param-name>debug</param-name>
+		<param-value>N</param-value>
+	</context-param>
+	<!-- se "Y" viene scaricato nella cartella di spool il pdf generato -->
+	<context-param>
+		<param-name>savePDF</param-name>
+		<param-value>N</param-value>
+	</context-param>
+	<!-- se "Y" viene scaricato nella cartella di spool il file xml ricevuto 
+		in ingresso -->
+	<context-param>
+		<param-name>saveXMLData</param-name>
+		<param-value>N</param-value>
+	</context-param>
+	<!-- se "Y" su ogni pdf generato � possibile eseguire qualsiasi operazione 
+		di copia, modifica, stampa ecc... -->
+	<context-param>
+		<param-name>secAllowAll</param-name>
+		<param-value>Y</param-value>
+	</context-param>
+	<!-- se "Y" per ogni pdf generato � possibile eseguire solo la stampa. Il 
+		parametro "secAllowAll" prevale su questa impstazione -->
+	<context-param>
+		<param-name>secAllowPrint</param-name>
+		<param-value>Y</param-value>
+	</context-param>
+	<!-- livello di criptazione: M[Standard_40bit] F[Standard 128] E[AES 128] -->
+	<!-- se il parametro secAllowAll=Y il documento non verr� criptato -->
+	<context-param>
+		<param-name>secEncription</param-name>
+		<param-value>E</param-value>
+	</context-param>
+	<!-- forza il garbage collector a pulire la memoria -->
+	<context-param>
+		<param-name>forceGC</param-name>
+		<param-value>Y</param-value>
+	</context-param>
+	<!--markup per load balancing -->
+	<context-param>
+		<param-name>markup</param-name>
+		<param-value>BATCHTST</param-value>
+	</context-param>
+
+	<!--nome del font per quello a matrice -->
+	<context-param>
+		<param-name>fontNameMatrix</param-name>
+		<param-value>IDAutomationDMatrix.ttf</param-value>
+	</context-param>
+	<!--dimensione default del font per quello a matrice -->
+	<context-param>
+		<param-name>defaultFontSizeMatrix</param-name>
+		<param-value>4</param-value>
+	</context-param>
+
+	<!--nome del font per quello a barcode -->
+	<context-param>
+		<param-name>fontNameBarcode</param-name>
+		<param-value>3OF9_NEW.TTF</param-value>
+	</context-param>
+	<!--dimensione default del font per quello a barcode -->
+	<context-param>
+		<param-name>defaultFontSizeBarcode</param-name>
+		<param-value>12</param-value>
+	</context-param>
+	<context-param>
+		<param-name>max_template</param-name>
+		<param-value>30</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>dbUrl</param-name>
+		<param-value>jdbc:oracle:thin:@//itasprod-scan3.gruppoitas.local:1521/prod.gruppoitas.local</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbUsr</param-name>
+		<param-value>u_gdoct</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbPwd</param-name>
+		<param-value>u_gdoct</param-value>
+	</context-param>
+</web-app>

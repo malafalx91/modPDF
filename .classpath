@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/_ItasJavaLib_20100113.jar"/>
+	<classpathentry kind="lib" path="lib/ChartDirector-6.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="lib/commons-imaging-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/IDautomationDMatrix.jar"/>
+	<classpathentry kind="lib" path="lib/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen.jar"/>
+	<classpathentry kind="lib" path="lib/jfreesvg-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-path-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/json-smart-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/mongo-java-driver-2.11.1.jar"/>
+	<classpathentry kind="lib" path="lib/odata4j-0.7.0-clientbundle.jar"/>
+	<classpathentry kind="lib" path="lib/odata4jAddition.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/partner.jar"/>
+	<classpathentry kind="lib" path="lib/relaxngDatatype.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9ee.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/stax2-api-3.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/WindwardCustomCallbacks.jar"/>
+	<classpathentry kind="lib" path="lib/WindwardCustomFunctions.jar"/>
+	<classpathentry kind="lib" path="lib/WindwardReports.jar"/>
+	<classpathentry kind="lib" path="lib/woodstox-core-asl-4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/wsc-23.jar"/>
+	<classpathentry kind="lib" path="lib/xsdlib.jar"/>
+	<classpathentry kind="lib" path="lib/poi.jar"/>
+	<classpathentry kind="lib" path="lib/bcmail-jdk15-143.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk15-143.jar"/>
+	<classpathentry kind="lib" path="lib/jai_imageio.jar"/>
+	<classpathentry kind="lib" path="lib/jcommon.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart.jar"/>
+	<classpathentry kind="lib" path="lib/iText.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_151">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/cassandra-driver-core-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/guava-16.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/metrics-core-3.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/netty-buffer-4.0.33.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-codec-4.0.33.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-common-4.0.33.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-handler-4.0.33.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-transport-4.0.33.Final.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -1,0 +1,3 @@
+rem java net.windward.xmlreport.RunReport template.rtf report.pdf -xml order.xml
+java -Xmx512m -cp ".\dom4j.jar;.\WindwardReports.jar;.\bcmail-jdk15-143.jar;.\bcprov-jdk15-143.jar;.\commons-codec.jar;.\IDautomationDMatrix.jar;.\iText.jar;.\iTextAsian.jar;.\jaxen.jar;.\jcommon.jar;.\jfreechart.jar;.\poi.jar;.\log4j.jar" net.windward.xmlreport.RunReport commercio_vi.rtf commercio.pdf -xml commercio.xml
+pause
